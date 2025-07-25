@@ -6,7 +6,7 @@
 
 html {
     height: 100%;
-    background-color: antiquewhite;
+    background-color: #f4f4f7; /* soft light gray */
 }
 
 body {
@@ -16,44 +16,42 @@ body {
     padding: 32px;
     height: 100vh;
     align-items: center;
-
+    color: #222; /* near-black for text */
 }
 
-header{
+header {
     width: 100vw;
-    background-color: rgb(121, 110, 224);
+    background-color: #5c6bc0; /* soft slate blue */
     margin-top: -32px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    
+    padding: 8px 32px;
+    color: white;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    flex:1;
+    flex: 1;
     width: 100%;
     margin-top: 32px;
 }
 
-footer{
+footer {
     margin-top: 16px;
     text-align: center;
     padding: 16px;
-    border-top: 4px solid #8682820a;
-    margin-left:-32px;
-    margin-right:-32px;
-    margin-bottom:  -32px;
+    border-top: 4px solid #e0e0e0;
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-bottom: -32px;
     width: 100%;
-}    
+    color: #666;
+}
 
 header nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* This vertically centers flex children */
+    align-items: center;
     list-style: none;
     font-size: 16px;
     font-weight: bold;
@@ -61,14 +59,14 @@ header nav ul {
     margin: 0;
 }
 
-.main-content{
+.main-content {
     flex: 4 1 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
-} 
+}
 
-.side-content{
+.side-content {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
@@ -78,74 +76,81 @@ header nav ul {
 .main-container {
     display: flex;
     flex-direction: column;
-    gap:16px;
-
+    gap: 16px;
 }
 
-
-
-
-/* Here comes the boxes */
+/* Box area */
 .boxes {
-    background-color: chocolate;
+    background-color: #dfe3e6; /* soft blue-gray */
     min-width: 300px;
     max-width: 500px;
     min-height: 300px;
-    max-height: 500px;;
+    max-height: 500px;
+    padding: 16px;
+    border-radius: 8px;
 }
 
-.boxa{
-    background-color: lightblue;
+/* Individual boxes with updated pastel-friendly colors */
+.boxa {
+    background-color: #b3e5fc; /* light cyan */
 }
 
-.boxb{
-    background-color: lightgreen;
+.boxb {
+    background-color: #c8e6c9; /* soft mint */
 }
 
-.boxc{
-    background-color: lightcoral;
+.boxc {
+    background-color: #ffcdd2; /* blush */
 }
 
-.boxd{
-    background-color: lightgoldenrodyellow;
+.boxd {
+    background-color: #fff9c4; /* light yellow */
 }
-
 
 #navdropdown {
     font-size: 32px;
-    color:rgb(0, 0, 0)
+    color: #ffffff;
+    cursor: pointer;
 }
 
 #navlinkedin {
-    fill: #000000;
+    fill: #ffffff;
     height: 100%;
-
 }
 
 #navlogo {
-    margin-right:auto;
+    margin-right: auto;
     margin-left: 16px;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 #navlogo img {
-  height: 32px;
-  color: rgb(94, 94, 100);
+    height: 32px;
+    color: #a03232;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    width:101vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    width: 101vw;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
     z-index: 1;
     transform: translateX(-8vw);
-
+    padding: 16px;
+    gap: 16px;
+    align-items: start;
+    color: #333;
+    height: 50vh;
 }
 
-.dropdown-menu li:hover{
-    background-color: red;
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
 }
 
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
